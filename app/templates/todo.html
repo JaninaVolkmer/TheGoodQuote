@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <h1>Weekly Reminder</h1>
+    <form action="/add" method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.todo.label }}<br>
+            {{ form.todo(size=32) }}<br>
+            {% for error in form.todo.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+    <hr>
+    {% for todo in todo_list %}
+    <hr>
+    <p>{{ todo.title }}</p>
+    {% if todo.complete == False %}
+    <span>Not Complete</span>
+    {% else %}
+    <span>Completed</span>
+    {% endif %}
+    <button type="button">
+        <a href="/update/{{ todo.id }}">Update</a>
+    </button>
+    <button>
+        <a href="/delete/{{ todo.id }}">Delete</a>
+    </button>
+    {% endfor %}
+{% endblock %}

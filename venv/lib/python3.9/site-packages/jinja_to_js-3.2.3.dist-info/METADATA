@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: jinja-to-js
+Version: 3.2.3
+Summary: Turns Jinja templates into JavaScript functions that can be run in the browser.
+Home-page: http://github.com/jonbretman/jinja-to-js/
+Author: Jon Bretman
+Author-email: jon.bretman@gmail.com
+License: Python
+Keywords: jinja html javascript templating
+Platform: UNKNOWN
+Requires-Dist: jinja2
+Requires-Dist: six
+
+UNKNOWN
+
+
