@@ -97,3 +97,4 @@ Traceback (most recent call last):
     if username in user and \
 TypeError: argument of type 'function' is not iterable
 2021-06-09 14:07:56,160 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:45]
+2021-06-21 15:04:44,953 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:49]
