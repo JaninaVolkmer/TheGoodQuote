@@ -1,1 +1,1 @@
-web: flask db upgrade; gunicorn thegoodquote:app
+web: gunicorn thegoodquote:app
