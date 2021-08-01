@@ -35,7 +35,7 @@ def index():
         if posts.has_prev else None
     return render_template('index.html', title='Home', form=form,
                            posts=posts.items, next_url=next_url,
-                           prev_url=prev_url)
+                           prev_url=prev_url) 
 
 @app.route('/explore')
 @login_required

@@ -1,41 +1,4 @@
-2021-06-08 16:13:58,855 ERROR: Exception on /add [POST] [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py:1454]
-Traceback (most recent call last):
-  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 1515, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 1513, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 1499, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
-  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask_login/utils.py", line 272, in decorated_view
-    return func(*args, **kwargs)
-  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/app/routes.py", line 199, in add
-    new_todo = Todo(title=form.todo.data, complete=False, user_id=int(id))
-TypeError: int() argument must be a string, a bytes-like object or a number, not 'builtin_function_or_method'
-2021-06-08 16:16:16,990 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:45]
-2021-06-08 16:16:27,195 ERROR: Exception on /add [POST] [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py:1454]
-Traceback (most recent call last):
-  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 1515, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 1513, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 1499, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
-  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask_login/utils.py", line 272, in decorated_view
-    return func(*args, **kwargs)
-  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/app/routes.py", line 199, in add
-    new_todo = Todo(title=form.todo.data, complete=False, current_user=user.username)
-AttributeError: 'function' object has no attribute 'username'
-2021-06-08 16:17:03,840 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:45]
-2021-06-08 16:19:22,824 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:45]
-2021-06-08 16:21:26,705 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:45]
-2021-06-08 17:03:59,778 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:45]
-2021-06-08 17:26:28,055 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:45]
-2021-06-09 12:38:50,117 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:45]
-2021-06-09 12:39:00,821 ERROR: Exception on / [GET] [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py:1454]
+2021-06-09 12:42:19,000 ERROR: Exception on / [GET] [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py:1454]
 Traceback (most recent call last):
   File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
     response = self.full_dispatch_request()
@@ -68,8 +31,8 @@ Traceback (most recent call last):
   File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/werkzeug/routing.py", line 2305, in build
     raise BuildError(endpoint, values, method, self)
 werkzeug.routing.BuildError: Could not build url for endpoint 'todo'. Did you forget to specify values ['username']?
-2021-06-09 12:40:49,978 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:45]
-2021-06-09 12:40:52,843 ERROR: Exception on / [GET] [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py:1454]
+2021-06-09 12:43:13,904 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:45]
+2021-06-09 12:43:21,963 ERROR: Exception on /todo [GET] [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py:1454]
 Traceback (most recent call last):
   File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
     response = self.full_dispatch_request()
@@ -81,25 +44,59 @@ Traceback (most recent call last):
     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
   File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask_login/utils.py", line 272, in decorated_view
     return func(*args, **kwargs)
-  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/app/routes.py", line 36, in index
-    return render_template('index.html', title='Home', form=form,
-  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/templating.py", line 147, in render_template
-    return _render(
-  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
-    rv = template.render(context)
-  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1304, in render
-    self.environment.handle_exception()
-  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/jinja2/environment.py", line 925, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/app/templates/index.html", line 1, in top-level template code
-    {% extends 'base.html' %}
-  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/app/templates/base.html", line 22, in top-level template code
-    <a href="{{ url_for('todo') }}">ToDo</a>
-  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/helpers.py", line 338, in url_for
-    return appctx.app.handle_url_build_error(error, endpoint, values)
-  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/helpers.py", line 325, in url_for
-    rv = url_adapter.build(
-  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/werkzeug/routing.py", line 2305, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.BuildError: Could not build url for endpoint 'todo'. Did you forget to specify values ['username']?
-2021-06-09 12:42:15,709 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:45]
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/app/routes.py", line 188, in todo
+    todo_list = Todo.query.all(current_user.username)
+TypeError: all() takes 1 positional argument but 2 were given
+2021-06-09 12:43:29,874 ERROR: Exception on /todo [GET] [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py:1454]
+Traceback (most recent call last):
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/app/routes.py", line 188, in todo
+    todo_list = Todo.query.all(current_user.username)
+TypeError: all() takes 1 positional argument but 2 were given
+2021-06-09 12:43:50,423 ERROR: Exception on /todo [GET] [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py:1454]
+Traceback (most recent call last):
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/app/routes.py", line 188, in todo
+    todo_list = Todo.query.all(current_user=username)
+TypeError: all() takes 1 positional argument but 2 were given
+2021-06-09 12:45:10,281 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:45]
+2021-06-09 14:06:48,813 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:45]
+2021-06-09 14:06:56,385 ERROR: Exception on /todo [GET] [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py:1454]
+Traceback (most recent call last):
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask_httpauth.py", line 161, in decorated
+    user = self.authenticate(auth, password)
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask_httpauth.py", line 238, in authenticate
+    return self.verify_password_callback(username, client_password)
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/app/routes.py", line 191, in verify_password
+    if username in user and \
+TypeError: argument of type 'function' is not iterable
+2021-06-09 14:07:56,160 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:45]
+2021-06-21 15:04:44,953 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:49]
+2021-06-21 16:37:57,374 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:49]
+2021-06-21 16:43:16,074 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:49]

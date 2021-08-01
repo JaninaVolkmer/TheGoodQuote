@@ -1,0 +1,94 @@
+2021-06-04 15:40:48,236 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:43]
+2021-06-04 16:02:13,738 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:43]
+2021-06-04 16:02:27,948 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:43]
+2021-06-07 17:39:23,869 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:45]
+2021-06-08 11:46:05,338 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:45]
+2021-06-08 11:46:08,004 ERROR: Exception on /login [GET] [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py:1454]
+Traceback (most recent call last):
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/app/routes.py", line 81, in login
+    return render_template('login.html', title='Sign In', form=form)
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/templating.py", line 147, in render_template
+    return _render(
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/app/templates/login.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/app/templates/base.html", line 36, in top-level template code
+    {% block content %}{% endblock %}
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/app/templates/login.html", line 27, in block 'content'
+    <a href="{{ url_for('reset_password_request') }}">Click to Reset</a>
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/werkzeug/routing.py", line 2305, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'reset_password_request'. Did you mean 'edit_profile' instead?
+2021-06-08 11:46:15,962 ERROR: Exception on /login [GET] [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py:1454]
+Traceback (most recent call last):
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/app/routes.py", line 81, in login
+    return render_template('login.html', title='Sign In', form=form)
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/templating.py", line 147, in render_template
+    return _render(
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/app/templates/login.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/app/templates/base.html", line 36, in top-level template code
+    {% block content %}{% endblock %}
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/app/templates/login.html", line 27, in block 'content'
+    <a href="{{ url_for('reset_password_request') }}">Click to Reset</a>
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/werkzeug/routing.py", line 2305, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'reset_password_request'. Did you mean 'edit_profile' instead?
+2021-06-08 12:15:03,549 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:45]
+2021-06-08 13:45:46,566 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:45]
+2021-06-08 13:46:32,031 ERROR: Exception on /reset_password_request [GET] [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py:1454]
+Traceback (most recent call last):
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/venv/lib/python3.9/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/janinavolkmer/Python/Flask/The_Good_Quote/app/routes.py", line 162, in reset_password_request
+    if form.validate_on_submit():
+TypeError: validate_on_submit() missing 1 required positional argument: 'self'
+2021-06-08 13:47:47,848 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:45]
+2021-06-08 15:09:14,142 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:45]
+2021-06-08 15:12:48,578 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:45]
+2021-06-08 15:20:35,269 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:45]
+2021-06-08 15:36:11,724 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:45]
+2021-06-08 15:42:00,123 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:45]
+2021-06-08 15:49:41,938 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:45]
+2021-06-08 16:12:17,961 INFO: TheGoodQuote startup [in /Users/janinavolkmer/Python/Flask/The_Good_Quote/app/__init__.py:45]
